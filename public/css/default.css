@@ -1,0 +1,228 @@
+body {    
+    background: #F8F8FF;
+    font-family: Geneva,Arial,Helvetica,sans-serif;       
+    font-size: 12px;
+}
+p {
+    font-size: 1.2em;
+}
+.cp{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header {
+    display: block; /* Блочный элемент */
+    padding: 5px; /* Отступы вокруг текста */
+    background: #E6E6FA; /* Цвет фона шапки */
+}
+#container {
+    width: 1000px; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивание по центру */
+    background: #fff; /* Цвет фона левой колонки */
+    display:block;
+    min-height: 500px;
+    border: 1px solid #F0F8FF;
+}
+#main_all{
+    padding: 10px;
+}
+nav {     
+    width: 200px; /* Ширина слоя */    
+    float: left; /* Обтекание по правому краю */
+}
+article {
+    display: block; /* Блочный элемент */
+    margin-left: 220px; /* Отступ справа */
+    padding: 10px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона правой колонки */
+    min-height: 500px; 
+    border-left: 1px solid #E6E6FA;
+}
+.butsa_cont {       
+    background: #fff; /* Цвет фона правой колонки */
+    min-height: 200px;
+}
+footer {
+    display: block; /* Блочный элемент */
+    background: #E6E6FA; /* Цвет фона подвала */
+    color: #000; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+}
+#auth {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 280px; /* Ширина слоя в пикселах */
+    height: 180px; /* Высота слоя в пикселах */
+    left: 50%; /* Положение слоя от левого края */
+    top: 50%; /* Положение слоя от верхнего края */
+    margin-left: -150px; /* Отступ слева */
+    margin-top: -100px;	/* Отступ сверху */
+    background: #FFE4E1; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки вокруг */
+    padding: 10px; /* Поля вокруг текста */
+    overflow: auto; /* Добавление полосы прокрутки */ 
+}
+
+#auth h2 {
+    text-align: center;
+}
+.auth_input input {
+    text-align: center;
+}
+textarea {
+    width: 600px;
+    height: 150px;
+}
+header span {
+    margin: 10px;   
+    font-size: 20px;
+}
+#site_name{
+    border: none;
+
+}
+h2 {
+    padding: 10px;
+    background-color: #cacaf4;
+}
+h3 {
+    padding: 6px;
+    border: 1px solid #D8D8F7;
+    background-color: #F4F4FD;
+}
+article ul {
+    margin-left: 10px;
+}
+div.article {
+    padding: 10px;
+    border: 1px solid #D8D8F7;
+}
+/* общий стиль */
+
+table tr td {
+    border: 1px solid #ccc;
+}
+
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    outline: none;
+}
+
+/*a:link {
+
+ color: #0066cc;  
+
+} 
+
+a:visited {color: #00cc63; }*/  
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active, a:focus {
+    color: #666; 
+    background-color: #E6E6FA; 
+}
+
+a.current {
+    color: black;
+    font-weight: bold;
+    background-color: #E6E6FA;
+}
+
+
+/* Дерево многоуровневое
+
+  -------------------------------- */
+div#multi-derevo {
+
+    width: 220px; /* блок под дерево */ 
+    padding: 0 0 1em 0; /* нижний отступ */
+    font-size: 1.3em;
+}
+
+div#multi-derevo span { /* обертка пункта */
+    text-decoration: none;
+    display: block; /* растянем до правого края блока */
+    margin: 0 0 0 1.2em;      
+    background-color: transparent;
+    border: solid silver; /* цвет линий */  
+    border-width: 0 0 1px 1px; /* границы: низ и лево */
+}
+
+div#multi-derevo span a {/* тест элемента дерева */
+    display: block; 
+    position: relative;
+    top: .95em; /* смещаем узел на середину линии */
+    background-color: #fff; /* закраска в цвет фона обязательна иначе будет видно линию */
+    margin: 0 0 .2em .7em; /* делаем промежуток между узлами, отодвигаем левее  */
+    padding: 0 0.3em; /* небольшой отступ от линии */
+
+}
+
+div#multi-derevo h4 {/* заголовок дерева */
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 .25em;
+    border-bottom: 1px solid silver;
+}
+
+div#multi-derevo h4 a {
+    display: block;
+}
+
+div#multi-derevo ul, div#multi-derevo li {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+div#multi-derevo ul  li {
+    line-height: 1.2em;
+}
+
+div#multi-derevo ul li ul {
+    display: none; /* узлы свернуты */
+}
+
+div#multi-derevo ul li ul li {
+    margin: 0 0 0 1.2em;
+    border-left: 1px solid silver; /* цвет вертикальной линии между узлами */
+}
+
+div#multi-derevo li.last {/* последний узел, соединительную линию к след. узлу убираем */
+    border: none; 
+}
+
+.marker { /* маркер раскрытия списка в закрытом состоянии */
+    border-color: transparent transparent transparent gray;
+    border-style: solid; 
+    border-width: .25em 0 .25em .5em;  
+    margin: .35em .25em 0 0; 
+    float: left; 
+    width: 0px; 
+    height: 0px; 
+    line-height: 0px;
+}
+
+.marker.open {/* маркер раскрытия списка в открытом состоянии */
+    border-color: gray transparent transparent transparent;
+    border-width: .5em .25em 0 .25em;      
+}
+
+
+
+
+
+
+
+/* IE 6 Fixup */
+* html #multi-derevo * { height: 1%;}
+* html .marker { border-style: dotted dotted dotted solid; }
+* html .marker.open { border-style: solid dotted dotted dotted; }

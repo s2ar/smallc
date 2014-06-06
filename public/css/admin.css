@@ -1,0 +1,77 @@
+body {
+    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background: #E8E8E8;
+}
+
+header {
+    display: block; /* Блочный элемент */
+    padding: 5px; /* Отступы вокруг текста */
+    background: #FFDAB9; /* Цвет фона шапки */
+    height:50px;
+}
+#container {
+    width: 1000px; /* Ширина слоя */
+    margin: 0 auto; /* Выравнивание по центру */
+    background: #f0f0f0; /* Цвет фона левой колонки */
+}
+nav {
+    margin-top: 10px; 
+    width: 200px; /* Ширина слоя */
+    padding: 0 10px; /* Отступы вокруг текста */
+    float: left; /* Обтекание по правому краю */
+}
+article {
+    display: block; /* Блочный элемент */
+    margin-left: 220px; /* Отступ справа */
+    padding: 10px; /* Поля вокруг текста */
+    background: #fff; /* Цвет фона правой колонки */
+    min-height: 200px;
+}
+
+footer {
+    display: block; /* Блочный элемент */
+    background: #FFDAB9; /* Цвет фона подвала */
+    color: #000; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+}
+#auth {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 280px; /* Ширина слоя в пикселах */
+    height: 180px; /* Высота слоя в пикселах */
+    left: 50%; /* Положение слоя от левого края */
+    top: 50%; /* Положение слоя от верхнего края */
+    margin-left: -150px; /* Отступ слева */
+    margin-top: -100px;	/* Отступ сверху */
+    background: #FFE4E1; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки вокруг */
+    padding: 10px; /* Поля вокруг текста */
+    overflow: auto; /* Добавление полосы прокрутки */ 
+}
+
+#auth h2 {
+    text-align: center;
+}
+.auth_input input {
+    text-align: center;
+}
+textarea {
+    width: 600px;
+    height: 150px;
+}
+table.category_management, table.category_management tr td, div.category_move table tr td{
+    border: 1px solid #E9967A;
+}
+table.category_management tr th, div.category_move table tr th{
+    border: 1px solid #E9967A;
+    background-color: #E9967A;
+    color: #fff;
+}
+.category_add, .category_edit, .category_move {
+    margin-left: 220px;
+    background: #fff;
+    padding: 10px; /* Поля вокруг текста */
+}
+header span {
+    margin: 10px;   
+    font-size: 20px;
+}
