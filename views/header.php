@@ -21,6 +21,7 @@
                 <a href="/articles">Статьи</a>
                 -->
                 <?php if (Session::get('loggedIn') === true): ?>
+                	<a href="/pamm">Памм</a>
                     <a href="/butsa">Бутса</a>
                     <a href="/admin">Админка</a>
                     <a href="/login/logout">Выйти</a>
