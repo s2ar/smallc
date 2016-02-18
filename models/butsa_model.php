@@ -319,8 +319,8 @@ class Butsa_Model extends Model {
     function updatePlayer($player_id) {
         if(!is_numeric($player_id)) return false;
         $url = 'http://www.butsa.ru/index.php?login=1';
-        $username = 'corar';
-        $userpass = 'pandemonium';
+        $username = 'test';
+        $userpass = 'test';
         // формируем строку с данными
         $postdata = "auth_name=".$username."&auth_pass=".$userpass."&auth_remember=true&step=1&url";
         $url = 'http://www.butsa.ru/xml/players/info.php?id='.$player_id;
