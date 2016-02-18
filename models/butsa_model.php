@@ -535,8 +535,8 @@ class Butsa_Model extends Model {
 //        $data = array("ver"=>1);
         
         
-        $username = 'corar';
-        $userpass = 'pandemonium';
+        $username = 'test';
+        $userpass = 'test';
         // формируем строку с данными
         $postdata = "auth_name=".$username."&auth_pass=".$userpass."&auth_remember=true&step=1&url";
         if( $ch = curl_init() ) {            
